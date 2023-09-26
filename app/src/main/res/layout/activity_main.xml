@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_gray">
+
+
+    <EditText
+        android:id="@+id/metersEditText"
+        android:layout_width="235dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="364dp"
+        android:ems="10"
+        android:hint="Enter a Number (m)"
+
+        android:inputType="number|textPersonName|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/convertId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="convert"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metersEditText"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/resultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertId"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <Button
+        android:id="@+id/mToIButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
+        android:text="Meters to Inches"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kgToLbsButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="144dp"
+        android:text="Kg to lbs"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/metersEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mToIButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/swapper"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="32dp"
+        android:text="swap"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/metersEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currentConv"
+        android:textStyle="bold"
+        android:layout_width="169dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="44dp"
+        android:text="Meters To Inches"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/metersEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kgToLbsButton"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
